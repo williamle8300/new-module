@@ -1,0 +1,44 @@
+{
+  "name": "@williamle8300/boilerplate",
+  "version": "1.0.6",
+  "description": "Personal boilerplate for quickly iterating npm modules. ",
+  "dependencies": {
+    "ndarray-ops": "^1.2.2",
+    "ndgemm": "0.0.0",
+    "zeros": "^1.0.0"
+  },
+  "devDependencies": {
+    "beefy": "^2.1.5",
+    "brfs": "^1.4.0",
+    "catw": "^1.0.0",
+    "less": "^2.5.0",
+    "tap": "^0.7.1",
+    "tap-spec": "^3.0.0",
+    "tape": "^4.0.0",
+    "watchify": "^3.2.1"
+  },
+  "scripts": {
+    "dev": "beefy index.js:bundle.js --live true 3000 -- -t brfs",
+    "dev-test": "beefy test/index.js:bundle.js --live true 8000 ",
+    "watch": "npm run watch-js & npm run watch-css",
+    "build": "npm run build-js & npm run build-css",
+    "watch-js": "watchify index.js -o static/bundle.js --debug --verbose",
+    "watch-css": "catw -c 'lessc -' 'style/*.less' -o static/bundle.css -v",
+    "build-js": "browserify index.js -o static/bundle.js",
+    "build-css": "catw -c 'lessc -' 'style/*.less' > static/bundle.css",
+    "test-dev": "beefy test/index.js:bundle.js --live true 3000 ",
+    "test": "tape test/index.js | tap-spec",
+    "publish": "npm publish --access public"
+  },
+  "author": "",
+  "license": "ISC",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/williamle8300/my-npm-boilerplate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/williamle8300/my-npm-boilerplate/issues"
+  },
+  "homepage": "https://github.com/williamle8300/my-npm-boilerplate#readme"
+}
