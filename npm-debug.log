@@ -11,18 +11,18 @@
 7 silly cache add   rawSpec: '.',
 7 silly cache add   spec: '/Users/William/Desktop/boilerplate',
 7 silly cache add   type: 'directory' }
-8 verbose addLocalDirectory /Users/William/.npm/@williamle8300/boilerplate/1.0.6/package.tgz not in flight; packing
-9 verbose tar pack [ '/Users/William/.npm/@williamle8300/boilerplate/1.0.6/package.tgz',
+8 verbose addLocalDirectory /Users/William/.npm/@williamle8300/boilerplate/1.0.7/package.tgz not in flight; packing
+9 verbose tar pack [ '/Users/William/.npm/@williamle8300/boilerplate/1.0.7/package.tgz',
 9 verbose tar pack   '/Users/William/Desktop/boilerplate' ]
-10 verbose tarball /Users/William/.npm/@williamle8300/boilerplate/1.0.6/package.tgz
+10 verbose tarball /Users/William/.npm/@williamle8300/boilerplate/1.0.7/package.tgz
 11 verbose folder /Users/William/Desktop/boilerplate
-12 info prepublish @williamle8300/boilerplate@1.0.6
-13 verbose addLocalTarball adding from inside cache /Users/William/.npm/@williamle8300/boilerplate/1.0.6/package.tgz
-14 silly cache afterAdd @williamle8300/boilerplate@1.0.6
-15 verbose afterAdd /Users/William/.npm/@williamle8300/boilerplate/1.0.6/package/package.json not in flight; writing
-16 verbose afterAdd /Users/William/.npm/@williamle8300/boilerplate/1.0.6/package/package.json written
+12 info prepublish @williamle8300/boilerplate@1.0.7
+13 verbose addLocalTarball adding from inside cache /Users/William/.npm/@williamle8300/boilerplate/1.0.7/package.tgz
+14 silly cache afterAdd @williamle8300/boilerplate@1.0.7
+15 verbose afterAdd /Users/William/.npm/@williamle8300/boilerplate/1.0.7/package/package.json not in flight; writing
+16 verbose afterAdd /Users/William/.npm/@williamle8300/boilerplate/1.0.7/package/package.json written
 17 silly publish { name: '@williamle8300/boilerplate',
-17 silly publish   version: '1.0.6',
+17 silly publish   version: '1.0.7',
 17 silly publish   description: 'Personal boilerplate for quickly iterating npm modules. ',
 17 silly publish   dependencies:
 17 silly publish    { fs: '0.0.2',
@@ -61,9 +61,9 @@
 17 silly publish   homepage: 'https://github.com/williamle8300/my-npm-boilerplate#readme',
 17 silly publish   readme: '# @williamle8300/boilerplate\n\nthing!\n\n# Leanest thing under 200loc that actually works\n\n> Now SUBSTACK doesn\'t do that. He just wants the most dependable, easy to understand and smallest module he can find (or make) to fulfil his objective.\n> In other words, he subscribes to the UNIX philosophy.\n\n> [...]\n\n> To him, it\'s about taking the time to understand the abstractions.\n\n# SUBSTACK drafts a new module\n\n- Abstractify the problem: draw ––>write nonJS ––>write pseudoJS ––>?\n- SUBSTACK codes as usual:\n  - Uses console.dir alot to inspect & debug\n  - DIDN\'T TDD - CREATES AN EXAMPLE.JS THAT REQUIRES THE MODULE AND TESTS ITS FUNCTIONALITY\n  - Codes in vim & switches to a terminal every so often to run the example.js script\n- IF HE NOTICES AN OPPORTUNITY TO MODULARISE, HE IMMEDIATELY MOVES THE FUNCTION INTO A NEW FILE & CHANGES THE FUNCTION DECLARATION TO MODULE.EXPORTS = ... (WHEN I SAY IMMEDIATELY, I REALLY DO MEAN IMMEDIATELY).\n- When he\'s happy with the module, `npm install tape tap --save-dev`\n- Refactors the example.js file as a set of tests (see below).\n- Writes README.markdown from scratch with introduction, API documentation & license (API documentation is quick & easy to write when you have small modules).\n\n- Runs pkginit to create package.json.\n- Create GitHub repo and npm publish\n- Add travis and/or testling-ci github hooks as appropriate\n\n# 1 + 2 = 3 philosophy and mathematics are agreed on this proof\n\n## PARAMETERS CODE 1/4 2 YEARS!!! TURTLES ALL THE WAY UP LOST\n\n- What to Build® scope + brevity + elegance (1st importance)\n- abstract problem (2nd importance)\n- know which npm modules to use\n- know which npm modules to author\n- solve problem. yay.\n\n- Litmus test: If you don\'t know exactly what the parameters and\n               return values will be, you haven\'t abstracted or\n               scoped the module sufficiently.\n\n- explore and get inspired; do a lot of online reading\n- design stuff\n  -\tthink of cool, new things to make\n  -\tdraw & write\n  -\tspec ideas\n  -\tseek opinions of others\n- cobble and ship code prodigiously\n- read books on\n  -\tjavascript\n  -\tprogramming\n  -\tmath; number theory\n- take math classes at OCC\n\n- i can do anything i want using npm!\n- but study how "they" do "the" anything\n- at infinite\n\n- real world thing\n- philsophically modeled\n- with mathematical precision\n- proofed in javascript\n\n- you want it\n- does 1 thing\n- completely open-sourceable\n\n  "turtle"\n learn  do\n\n- quickest path to a README\n\n- events\n- streams\n- url\n- path\n- querystring',
 17 silly publish   readmeFilename: 'README.md',
-17 silly publish   gitHead: '36396968da6f3df4a9f50df95734d9f066f80c1f',
-17 silly publish   _id: '@williamle8300/boilerplate@1.0.6',
-17 silly publish   _shasum: 'e7f73c97db1d9b400a7c24ca093dc3c55ab97685',
+17 silly publish   gitHead: '8282138aa5c867296f914b0e8f3469ae42d9c123',
+17 silly publish   _id: '@williamle8300/boilerplate@1.0.7',
+17 silly publish   _shasum: 'f37f582f807e59fc12ae1e31b1d8d335315d682d',
 17 silly publish   _from: '.' }
 18 silly mapToRegistry name @williamle8300/boilerplate
 19 silly mapToRegistry scope (from package name) @williamle8300
@@ -72,47 +72,41 @@
 22 silly mapToRegistry registry https://registry.npmjs.org/
 23 silly mapToRegistry uri https://registry.npmjs.org/@williamle8300%2fboilerplate
 24 verbose publish registryBase https://registry.npmjs.org/
-25 silly publish uploading /Users/William/.npm/@williamle8300/boilerplate/1.0.6/package.tgz
+25 silly publish uploading /Users/William/.npm/@williamle8300/boilerplate/1.0.7/package.tgz
 26 verbose request uri https://registry.npmjs.org/@williamle8300%2fboilerplate
 27 verbose request sending authorization for write operation
-28 info attempt registry request try #1 at 17:00:01
+28 info attempt registry request try #1 at 17:00:28
 29 verbose request using bearer token for auth
-30 verbose request id 306efd51f26c1f94
+30 verbose request id 18635bb38c6f0cac
 31 http request PUT https://registry.npmjs.org/@williamle8300%2fboilerplate
-32 http 403 https://registry.npmjs.org/@williamle8300%2fboilerplate
-33 verbose headers { 'content-type': 'application/json',
-33 verbose headers   'cache-control': 'max-age=0',
-33 verbose headers   'content-length': '95',
-33 verbose headers   'accept-ranges': 'bytes',
-33 verbose headers   date: 'Sun, 03 May 2015 00:00:03 GMT',
-33 verbose headers   via: '1.1 varnish',
-33 verbose headers   connection: 'keep-alive',
-33 verbose headers   'x-served-by': 'cache-lax1434-LAX',
-33 verbose headers   'x-cache': 'MISS',
-33 verbose headers   'x-cache-hits': '0',
-33 verbose headers   'x-timer': 'S1430611201.613986,VS0,VE2142' }
-34 verbose request invalidating /Users/William/.npm/registry.npmjs.org/_40williamle8300_252fboilerplate on PUT
-35 error publish Failed PUT 403
-36 verbose stack Error: "You cannot publish over the previously published version 1.0.6." : @williamle8300%2fboilerplate
-36 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:247:14)
-36 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:170:14)
-36 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:368:22)
-36 verbose stack     at Request.EventEmitter.emit (events.js:98:17)
-36 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1219:14)
-36 verbose stack     at Request.EventEmitter.emit (events.js:117:20)
-36 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1167:12)
-36 verbose stack     at IncomingMessage.EventEmitter.emit (events.js:117:20)
-36 verbose stack     at _stream_readable.js:920:16
-36 verbose stack     at process._tickCallback (node.js:415:13)
-37 verbose statusCode 403
-38 verbose pkgid @williamle8300%2fboilerplate
+32 http 200 https://registry.npmjs.org/@williamle8300%2fboilerplate
+33 verbose request invalidating /Users/William/.npm/registry.npmjs.org/_40williamle8300_252fboilerplate on PUT
+34 info publish @williamle8300/boilerplate@1.0.7
+35 verbose unsafe-perm in lifecycle true
+36 info @williamle8300/boilerplate@1.0.7 Failed to exec publish script
+37 verbose stack Error: @williamle8300/boilerplate@1.0.7 publish: `npm publish --access public`
+37 verbose stack Exit status 1
+37 verbose stack     at EventEmitter.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:213:16)
+37 verbose stack     at EventEmitter.emit (events.js:98:17)
+37 verbose stack     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/spawn.js:24:14)
+37 verbose stack     at ChildProcess.EventEmitter.emit (events.js:98:17)
+37 verbose stack     at maybeClose (child_process.js:735:16)
+37 verbose stack     at Process.ChildProcess._handle.onexit (child_process.js:802:5)
+38 verbose pkgid @williamle8300/boilerplate@1.0.7
 39 verbose cwd /Users/William/Desktop/boilerplate
 40 error Darwin 14.0.0
 41 error argv "node" "/usr/local/bin/npm" "publish"
 42 error node v0.10.24
 43 error npm  v2.8.4
-44 error code E403
-45 error "You cannot publish over the previously published version 1.0.6." : @williamle8300%2fboilerplate
-46 error If you need help, you may report this error at:
-46 error     <https://github.com/npm/npm/issues>
+44 error code ELIFECYCLE
+45 error @williamle8300/boilerplate@1.0.7 publish: `npm publish --access public`
+45 error Exit status 1
+46 error Failed at the @williamle8300/boilerplate@1.0.7 publish script 'npm publish --access public'.
+46 error This is most likely a problem with the @williamle8300/boilerplate package,
+46 error not with npm itself.
+46 error Tell the author that this fails on your system:
+46 error     npm publish --access public
+46 error You can get their info via:
+46 error     npm owner ls @williamle8300/boilerplate
+46 error There is likely additional logging output above.
 47 verbose exit [ 1, true ]

@@ -1,8 +1,21 @@
-# @williamle8300/boilerplate
 
-thing!
+SOLVE THE PROBLEM
 
-# Leanest thing under 200loc that actually works
+# new-module
+
+Boilerplate for starting new npm modules
+
+# Steps
+
+1. what? read, play, draw, write like a madman
+2. abstract
+3. what dependencies are needed? what modules to author myself?
+4. make.
+5. solved: is it simutaneously powerful and utterly trivial? yay.
+6. test.
+7. npm run publish.
+
+# substack's approach
 
 > Now SUBSTACK doesn't do that. He just wants the most dependable, easy to understand and smallest module he can find (or make) to fulfil his objective.
 > In other words, he subscribes to the UNIX philosophy.
@@ -11,7 +24,7 @@ thing!
 
 > To him, it's about taking the time to understand the abstractions.
 
-# SUBSTACK drafts a new module
+# Making a new npm module
 
 - Abstractify the problem: draw ––>write nonJS ––>write pseudoJS ––>?
 - SUBSTACK codes as usual:
@@ -31,15 +44,6 @@ thing!
 
 ## PARAMETERS CODE 1/4 2 YEARS!!! TURTLES ALL THE WAY UP LOST
 
-- What to Build® scope + brevity + elegance (1st importance)
-- abstract problem (2nd importance)
-- know which npm modules to use
-- know which npm modules to author
-- solve problem. yay.
-
-- Litmus test: If you don't know exactly what the parameters and
-               return values will be, you haven't abstracted or
-               scoped the module sufficiently.
 
 - explore and get inspired; do a lot of online reading
 - design stuff

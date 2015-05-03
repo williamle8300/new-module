@@ -1,5 +1,5 @@
 {
-  "name": "@williamle8300/boilerplate",
+  "name": "new-module",
   "version": "1.0.7",
   "description": "Personal boilerplate for quickly iterating npm modules. ",
   "dependencies": {
@@ -30,7 +30,7 @@
     "build-css": "catw -c 'lessc -' 'style/*.less' > static/bundle.css",
     "test-dev": "beefy test/index.js:bundle.js --live true 3000 ",
     "test": "tape test/index.js | tap-spec",
-    "publish": "npm publish --access public"
+    "publish": "npm publish"
   },
   "author": "",
   "license": "ISC",
