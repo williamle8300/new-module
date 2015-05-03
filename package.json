@@ -1,6 +1,6 @@
 {
   "name": "@williamle8300/boilerplate",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Personal boilerplate for quickly iterating npm modules. ",
   "dependencies": {
     "fs": "0.0.2",
