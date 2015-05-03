@@ -1,0 +1,118 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@2.8.4
+3 info using node@v0.10.24
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec { raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/William/Desktop/boilerplate',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/William/.npm/@williamle8300/boilerplate/1.0.6/package.tgz not in flight; packing
+9 verbose tar pack [ '/Users/William/.npm/@williamle8300/boilerplate/1.0.6/package.tgz',
+9 verbose tar pack   '/Users/William/Desktop/boilerplate' ]
+10 verbose tarball /Users/William/.npm/@williamle8300/boilerplate/1.0.6/package.tgz
+11 verbose folder /Users/William/Desktop/boilerplate
+12 info prepublish @williamle8300/boilerplate@1.0.6
+13 verbose addLocalTarball adding from inside cache /Users/William/.npm/@williamle8300/boilerplate/1.0.6/package.tgz
+14 silly cache afterAdd @williamle8300/boilerplate@1.0.6
+15 verbose afterAdd /Users/William/.npm/@williamle8300/boilerplate/1.0.6/package/package.json not in flight; writing
+16 verbose afterAdd /Users/William/.npm/@williamle8300/boilerplate/1.0.6/package/package.json written
+17 silly publish { name: '@williamle8300/boilerplate',
+17 silly publish   version: '1.0.6',
+17 silly publish   description: 'Personal boilerplate for quickly iterating npm modules. ',
+17 silly publish   dependencies:
+17 silly publish    { fs: '0.0.2',
+17 silly publish      'ndarray-ops': '^1.2.2',
+17 silly publish      ndgemm: '0.0.0',
+17 silly publish      nonsense: '^0.2.0',
+17 silly publish      zeros: '^1.0.0' },
+17 silly publish   devDependencies:
+17 silly publish    { beefy: '^2.1.5',
+17 silly publish      brfs: '^1.4.0',
+17 silly publish      catw: '^1.0.0',
+17 silly publish      less: '^2.5.0',
+17 silly publish      tap: '^0.7.1',
+17 silly publish      'tap-spec': '^3.0.0',
+17 silly publish      tape: '^4.0.0',
+17 silly publish      watchify: '^3.2.1' },
+17 silly publish   scripts:
+17 silly publish    { dev: 'beefy index.js:bundle.js --live true 3000 -- -t brfs',
+17 silly publish      'dev-test': 'beefy test/index.js:bundle.js --live true 8000 ',
+17 silly publish      watch: 'npm run watch-js & npm run watch-css',
+17 silly publish      build: 'npm run build-js & npm run build-css',
+17 silly publish      'watch-js': 'watchify index.js -o static/bundle.js --debug --verbose',
+17 silly publish      'watch-css': 'catw -c \'lessc -\' \'style/*.less\' -o static/bundle.css -v',
+17 silly publish      'build-js': 'browserify index.js -o static/bundle.js',
+17 silly publish      'build-css': 'catw -c \'lessc -\' \'style/*.less\' > static/bundle.css',
+17 silly publish      'test-dev': 'beefy test/index.js:bundle.js --live true 3000 ',
+17 silly publish      test: 'tape test/index.js | tap-spec',
+17 silly publish      publish: 'npm publish --access public' },
+17 silly publish   author: '',
+17 silly publish   license: 'ISC',
+17 silly publish   main: 'index.js',
+17 silly publish   repository:
+17 silly publish    { type: 'git',
+17 silly publish      url: 'git+https://github.com/williamle8300/my-npm-boilerplate.git' },
+17 silly publish   bugs: { url: 'https://github.com/williamle8300/my-npm-boilerplate/issues' },
+17 silly publish   homepage: 'https://github.com/williamle8300/my-npm-boilerplate#readme',
+17 silly publish   readme: '# @williamle8300/boilerplate\n\nthing!\n\n# Leanest thing under 200loc that actually works\n\n> Now SUBSTACK doesn\'t do that. He just wants the most dependable, easy to understand and smallest module he can find (or make) to fulfil his objective.\n> In other words, he subscribes to the UNIX philosophy.\n\n> [...]\n\n> To him, it\'s about taking the time to understand the abstractions.\n\n# SUBSTACK drafts a new module\n\n- Abstractify the problem: draw ––>write nonJS ––>write pseudoJS ––>?\n- SUBSTACK codes as usual:\n  - Uses console.dir alot to inspect & debug\n  - DIDN\'T TDD - CREATES AN EXAMPLE.JS THAT REQUIRES THE MODULE AND TESTS ITS FUNCTIONALITY\n  - Codes in vim & switches to a terminal every so often to run the example.js script\n- IF HE NOTICES AN OPPORTUNITY TO MODULARISE, HE IMMEDIATELY MOVES THE FUNCTION INTO A NEW FILE & CHANGES THE FUNCTION DECLARATION TO MODULE.EXPORTS = ... (WHEN I SAY IMMEDIATELY, I REALLY DO MEAN IMMEDIATELY).\n- When he\'s happy with the module, `npm install tape tap --save-dev`\n- Refactors the example.js file as a set of tests (see below).\n- Writes README.markdown from scratch with introduction, API documentation & license (API documentation is quick & easy to write when you have small modules).\n\n- Runs pkginit to create package.json.\n- Create GitHub repo and npm publish\n- Add travis and/or testling-ci github hooks as appropriate\n\n# 1 + 2 = 3 philosophy and mathematics are agreed on this proof\n\n## PARAMETERS CODE 1/4 2 YEARS!!! TURTLES ALL THE WAY UP LOST\n\n- What to Build® scope + brevity + elegance (1st importance)\n- abstract problem (2nd importance)\n- know which npm modules to use\n- know which npm modules to author\n- solve problem. yay.\n\n- Litmus test: If you don\'t know exactly what the parameters and\n               return values will be, you haven\'t abstracted or\n               scoped the module sufficiently.\n\n- explore and get inspired; do a lot of online reading\n- design stuff\n  -\tthink of cool, new things to make\n  -\tdraw & write\n  -\tspec ideas\n  -\tseek opinions of others\n- cobble and ship code prodigiously\n- read books on\n  -\tjavascript\n  -\tprogramming\n  -\tmath; number theory\n- take math classes at OCC\n\n- i can do anything i want using npm!\n- but study how "they" do "the" anything\n- at infinite\n\n- real world thing\n- philsophically modeled\n- with mathematical precision\n- proofed in javascript\n\n- you want it\n- does 1 thing\n- completely open-sourceable\n\n  "turtle"\n learn  do\n\n- quickest path to a README\n\n- events\n- streams\n- url\n- path\n- querystring',
+17 silly publish   readmeFilename: 'README.md',
+17 silly publish   gitHead: '36396968da6f3df4a9f50df95734d9f066f80c1f',
+17 silly publish   _id: '@williamle8300/boilerplate@1.0.6',
+17 silly publish   _shasum: 'e7f73c97db1d9b400a7c24ca093dc3c55ab97685',
+17 silly publish   _from: '.' }
+18 silly mapToRegistry name @williamle8300/boilerplate
+19 silly mapToRegistry scope (from package name) @williamle8300
+20 verbose mapToRegistry no registry URL found in name for scope @williamle8300
+21 silly mapToRegistry using default registry
+22 silly mapToRegistry registry https://registry.npmjs.org/
+23 silly mapToRegistry uri https://registry.npmjs.org/@williamle8300%2fboilerplate
+24 verbose publish registryBase https://registry.npmjs.org/
+25 silly publish uploading /Users/William/.npm/@williamle8300/boilerplate/1.0.6/package.tgz
+26 verbose request uri https://registry.npmjs.org/@williamle8300%2fboilerplate
+27 verbose request sending authorization for write operation
+28 info attempt registry request try #1 at 17:00:01
+29 verbose request using bearer token for auth
+30 verbose request id 306efd51f26c1f94
+31 http request PUT https://registry.npmjs.org/@williamle8300%2fboilerplate
+32 http 403 https://registry.npmjs.org/@williamle8300%2fboilerplate
+33 verbose headers { 'content-type': 'application/json',
+33 verbose headers   'cache-control': 'max-age=0',
+33 verbose headers   'content-length': '95',
+33 verbose headers   'accept-ranges': 'bytes',
+33 verbose headers   date: 'Sun, 03 May 2015 00:00:03 GMT',
+33 verbose headers   via: '1.1 varnish',
+33 verbose headers   connection: 'keep-alive',
+33 verbose headers   'x-served-by': 'cache-lax1434-LAX',
+33 verbose headers   'x-cache': 'MISS',
+33 verbose headers   'x-cache-hits': '0',
+33 verbose headers   'x-timer': 'S1430611201.613986,VS0,VE2142' }
+34 verbose request invalidating /Users/William/.npm/registry.npmjs.org/_40williamle8300_252fboilerplate on PUT
+35 error publish Failed PUT 403
+36 verbose stack Error: "You cannot publish over the previously published version 1.0.6." : @williamle8300%2fboilerplate
+36 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:247:14)
+36 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:170:14)
+36 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:368:22)
+36 verbose stack     at Request.EventEmitter.emit (events.js:98:17)
+36 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1219:14)
+36 verbose stack     at Request.EventEmitter.emit (events.js:117:20)
+36 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1167:12)
+36 verbose stack     at IncomingMessage.EventEmitter.emit (events.js:117:20)
+36 verbose stack     at _stream_readable.js:920:16
+36 verbose stack     at process._tickCallback (node.js:415:13)
+37 verbose statusCode 403
+38 verbose pkgid @williamle8300%2fboilerplate
+39 verbose cwd /Users/William/Desktop/boilerplate
+40 error Darwin 14.0.0
+41 error argv "node" "/usr/local/bin/npm" "publish"
+42 error node v0.10.24
+43 error npm  v2.8.4
+44 error code E403
+45 error "You cannot publish over the previously published version 1.0.6." : @williamle8300%2fboilerplate
+46 error If you need help, you may report this error at:
+46 error     <https://github.com/npm/npm/issues>
+47 verbose exit [ 1, true ]

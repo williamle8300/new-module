@@ -3,8 +3,10 @@
   "version": "1.0.6",
   "description": "Personal boilerplate for quickly iterating npm modules. ",
   "dependencies": {
+    "fs": "0.0.2",
     "ndarray-ops": "^1.2.2",
     "ndgemm": "0.0.0",
+    "nonsense": "^0.2.0",
     "zeros": "^1.0.0"
   },
   "devDependencies": {
